@@ -1,6 +1,6 @@
 {
   "name": "test-1",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds 2 Numbers",
   "main": "dist/AddTwoNumbers.js",
   "author": "Tom Sacher",
