@@ -1,0 +1,16 @@
+name: Build
+
+on:
+    pull_request:
+        branches: [ main ]
+
+jobs:
+    tag-build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Installing Dependencies
+              run: npx lerna bootstrap
+            - name: Building all the things
+              run: npx lerna run build
