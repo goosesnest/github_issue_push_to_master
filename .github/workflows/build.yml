@@ -15,7 +15,7 @@ jobs:
                   git config --global user.email "me@dunklestoast.de"
                   git config --global user.name "lerna"
             - name: Versioning via lerna
-              run: npx lerna version --amend
+              run: npx lerna version --no-push
             - name: Installing Dependencies
               run: npx lerna bootstrap
             - name: Building all the things
